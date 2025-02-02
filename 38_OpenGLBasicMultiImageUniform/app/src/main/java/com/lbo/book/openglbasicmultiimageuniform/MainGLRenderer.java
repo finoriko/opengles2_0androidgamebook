@@ -159,7 +159,7 @@ public class MainGLRenderer implements Renderer {
         GLES20.glBlendFunc(GLES20.GL_ONE,GLES20.GL_ONE_MINUS_SRC_ALPHA);
         for(int i=0;i< bitmap.length;i++)
         {
-            GLES20.glGenTextures(1,texturenames,3);
+            GLES20.glGenTextures(1,texturenames,i);
             GLES20.glActiveTexture(33984+i);
             GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texturenames[i]);
             GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER, GLES20.GL_LINEAR);
@@ -176,7 +176,7 @@ public class MainGLRenderer implements Renderer {
         GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, bitmap[0], 0);
 
         GLES20.glBlendFunc(GLES20.GL_ONE, GLES20.GL_ONE_MINUS_SRC_ALPHA);
-        GLES20.glGenTextures(1, texturenames, 0);
+        GLES20.glGenTextures(1, texturenames, 1);
         GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texturenames[1]);
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER,
@@ -185,7 +185,7 @@ public class MainGLRenderer implements Renderer {
         GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, bitmap[1], 0);
 
         GLES20.glBlendFunc(GLES20.GL_ONE, GLES20.GL_ONE_MINUS_SRC_ALPHA);
-        GLES20.glGenTextures(1, texturenames, 0);
+        GLES20.glGenTextures(1, texturenames, 2);
         GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texturenames[2]);
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER,
@@ -194,7 +194,7 @@ public class MainGLRenderer implements Renderer {
         GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, bitmap[2], 0);
 
         GLES20.glBlendFunc(GLES20.GL_ONE, GLES20.GL_ONE_MINUS_SRC_ALPHA);
-        GLES20.glGenTextures(1, texturenames, 0);
+        GLES20.glGenTextures(1, texturenames, 3);
         GLES20.glActiveTexture(GLES20.GL_TEXTURE3);
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texturenames[3]);
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER,
