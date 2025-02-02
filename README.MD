@@ -1,4 +1,4 @@
-# OpenGL game programming
+# OpenGL ES 2.0 Android game programming
 
 ![OpenGL ES 2.0 안드로이드 게임프로그래밍 예제 파일]
 
